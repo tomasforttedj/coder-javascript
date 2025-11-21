@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛍️ Simulador de Pedidos y Envíos - Proyecto Final JS</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+    <h1>🛒 Calculadora de Pedidos y Envíos</h1>
+    
+    <section>
+        <h2>1. Seleccionar Productos del Catálogo</h2>
+        <div id="catalogo-productos" class="catalogo-grid">
+            </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>2. Tu Pedido</h2>
+        
+        <div id="carrito-items-contenedor">
+            <h3>Items agregados:</h3>
+            <ul id="lista-carrito">
+                </ul>
+        </div>
+        
+        <form id="form-envio">
+            <input type="checkbox" id="check-envio">
+            <label for="check-envio">Deseo envío a domicilio</label>
+            <br>
+            <input type="text" id="input-cp" placeholder="Código Postal (ej: 1400)" disabled required>
+            <button type="button" id="btn-calcular">💰 Finalizar Pedido</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <section id="resumen-pedido">
+        <h2>3. Resumen de tu Pedido</h2>
+        <div id="resultado-final">
+            <p>Subtotal Productos: <span id="subtotal-span">$0.00</span></p>
+            <p>Costo de Envío: <span id="envio-span">$0.00</span></p>
+            <p>Impuesto (IVA 21%): <span id="iva-span">$0.00</span></p>
+            <h3>TOTAL A PAGAR: <span id="total-final-span">$0.00</span></h3>
+        </div>
+        
+        <button id="btn-limpiar">🗑️ Limpiar Carrito</button>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> 
+    
+    <script src="js/main.js"></script> 
+</body>
+<footer>
+    <p>Designed x Tomi :)</p>
+</footer>
+</html>

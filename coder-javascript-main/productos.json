@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "nombre": "Licencia de Software Pro",
+    "precio": 4500.00
+  },
+  {
+    "id": 2,
+    "nombre": "Manual Técnico Impreso",
+    "precio": 1500.00
+  },
+  {
+    "id": 3,
+    "nombre": "Servicio de Consultoría (Hora)",
+    "precio": 2800.00
+  },
+  {
+    "id": 4,
+    "nombre": "Kit de Repuestos Básicos",
+    "precio": 750.50
+  }
+]

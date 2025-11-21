@@ -1,0 +1,163 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; 
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #28a745;
+    border-left: 5px solid #28a745;
+    padding-left: 10px;
+    margin-top: 25px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #ccc, rgba(0, 0, 0, 0));
+    margin: 30px 0;
+}
+
+
+input[type="number"],
+input[type="text"] {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#btn-agregar {
+    background-color: #28a745; 
+}
+
+#btn-agregar:hover {
+    background-color: #1e7e34;
+}
+
+#btn-limpiar {
+    background-color: #dc3545; 
+    margin-top: 20px;
+}
+
+#btn-limpiar:hover {
+    background-color: #c82333;
+}
+
+/* --- Estilos para la Inyección de Catálogo --- */
+
+/* Contenedor principal del catálogo para usar un diseño de cuadrícula (grid) */
+.catalogo-grid {
+    display: grid;
+    /* Define 3 columnas de igual tamaño */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px; /* Espacio entre las tarjetas */
+    margin-top: 20px;
+}
+
+/* Estilo para cada tarjeta de producto generada por JS */
+.tarjeta-producto {
+    background-color: #f0f8ff; /* Color de fondo suave */
+    border: 1px solid #b0d8f7; /* Borde sutil */
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Para que el botón quede abajo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tarjeta-producto h3 {
+    color: #007bff;
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.tarjeta-producto strong {
+    display: block; /* Para que el precio ocupe su propia línea */
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #28a745;
+}
+
+/* Estilo específico para el botón de agregar dentro de la tarjeta */
+.tarjeta-producto .btn-agregar {
+    margin-top: 10px;
+    background-color: #28a745;
+    color: white;
+}
+
+.tarjeta-producto .btn-agregar:hover {
+    background-color: #1e7e34;
+}
+
+/* Estilo para la lista de ítems en el carrito */
+#lista-carrito {
+    list-style-type: none;
+    padding-left: 0;
+    border: 1px dashed #ccc;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+#lista-carrito li {
+    padding: 5px 0;
+    border-bottom: 1px dotted #eee;
+}
+
+#lista-carrito li:last-child {
+    border-bottom: none;
+}
+
+
+.btn-eliminar {
+    background-color: #dc3545; 
+    color: white;
+    padding: 4px 8px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.8em;
+    cursor: pointer;
+    float: right; 
+}
+
+.btn-eliminar:hover {
+    background-color: #c82333;
+}
